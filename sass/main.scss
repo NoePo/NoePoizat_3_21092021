@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('polices/Roboto-Regular.ttf');
+    font-family: 'Shrikhand';
+    src: url('polices/Shrikhand-Regular.otf')
+}
+
+
+.marge {
+    margin-left: 15px;
+}
+
+$Primaire : #9356DC;
+$Secondaire : #FF79DA;
+$Tertiaire : #99E2D0;
+$Grey: #F2F2F2;
+
+@mixin centrer {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Logo {
+    width: 200px;
+    @include centrer;
+}
+
+#Localisation {
+    background-color: rgb(231, 228, 228);
+}
+
+.Localisation_heading {
+    display: flex;
+    align-items: center;
+    @include centrer;
+}
+
+#Reserver {
+    background-color: $Grey ;
+}
+
+#Haut_page {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Coeur {
+    transition: all 400ms linear;
+    &:active {
+        background-color: $Primaire;
+    }
+}
+
+
+
+
+
+
+
+
+#Navigation1 {
+    background-color: $Grey;
+    border: 1px $Grey solid;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px $Grey;
+    margin-bottom: 10px;
+    width: 80%;
+    @include centrer;
+}
+
+
+
+/* Partie restaurants */
+
+
+article {
+    background: $Grey;
+}
+
+.Restau-prev {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px $Grey solid;
+    width: 80%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 6px $Grey;
+    margin-bottom: 10px;
+}
+
+.Restau-prev_image {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+
+
+
+#Texte_bas {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 18, 18);
+    padding-left: 5% ;
+}
+
+.Truc_bas {
+    display: flex;
+    align-items: center;
+}
+
+.Texte_bas {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+

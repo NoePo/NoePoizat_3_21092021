@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("polices/Roboto-Regular.ttf");
+  font-family: 'Shrikhand';
+  src: url("polices/Shrikhand-Regular.otf");
+}
+
+.marge {
+  margin-left: 15px;
+}
+
+.Logo {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Localisation {
+  background-color: #e7e4e4;
+}
+
+.Localisation_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Reserver {
+  background-color: #F2F2F2;
+}
+
+#Haut_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Coeur {
+  -webkit-transition: all 400ms linear;
+  transition: all 400ms linear;
+}
+
+.Coeur:active {
+  background-color: #9356DC;
+}
+
+#Navigation1 {
+  background-color: #F2F2F2;
+  border: 1px #F2F2F2 solid;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 6px #F2F2F2;
+          box-shadow: 6px 6px 6px #F2F2F2;
+  margin-bottom: 10px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Partie restaurants */
+article {
+  background: #F2F2F2;
+}
+
+.Restau-prev {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #F2F2F2 solid;
+  width: 80%;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 6px 6px 6px #F2F2F2;
+          box-shadow: 6px 6px 6px #F2F2F2;
+  margin-bottom: 10px;
+}
+
+.Restau-prev_image {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Texte_bas {
+  color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #131212;
+  padding-left: 5%;
+}
+
+.Truc_bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Texte_bas {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=main.css.map */
