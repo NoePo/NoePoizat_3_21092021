@@ -45,12 +45,7 @@ $Grey: #F2F2F2;
 }
 
 
-.Coeur {
-    transition: all 400ms linear;
-    &:active {
-        background-color: $Primaire;
-    }
-}
+
 
 
 
@@ -78,7 +73,7 @@ article {
     background: $Grey;
 }
 
-.Restau-prev {
+#Restau-prev {
     margin-left: auto;
     margin-right: auto;
     border: 1px $Grey solid;
@@ -87,15 +82,31 @@ article {
     background-color: white;
     box-shadow: 6px 6px 6px $Grey;
     margin-bottom: 10px;
+    .Restau-prev__image {
+        height: 200px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+        .Restau-prev__heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
 }
 
-.Restau-prev_image {
-    height: 200px;
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-    overflow: hidden;
-    object-fit: cover;
+.Coeur {
+    transition: all 400ms linear;
+    &:active {
+        background-color: $Primaire;
+    }
 }
+
+
+
 
 
 
