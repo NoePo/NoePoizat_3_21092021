@@ -11,6 +11,13 @@
 
 .Logo {
   width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Haut_page {
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -26,6 +33,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 30%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -44,16 +52,71 @@
           flex-direction: column;
 }
 
-#Navigation1 {
+.Texte_centre {
+  text-align: center;
+}
+
+.Explorer {
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  width: 30%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 6px 6px 20px #c2c0c0;
+          box-shadow: 6px 6px 20px #c2c0c0;
+}
+
+/* Partie fonctionnement */
+.Navigation1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F2F2F2;
-  border: 1px #F2F2F2 solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 20px;
   -webkit-box-shadow: 6px 6px 6px #F2F2F2;
           box-shadow: 6px 6px 6px #F2F2F2;
-  margin-bottom: 10px;
-  width: 80%;
+  margin-bottom: 20px;
+  width: 60%;
   margin-right: auto;
   margin-left: auto;
+  -webkit-box-shadow: 6px 6px 20px #c2c0c0;
+          box-shadow: 6px 6px 20px #c2c0c0;
+}
+
+.Navigation1:hover {
+  background-color: #ffdff6;
+}
+
+.Navigation1 .Navigation-chiffre {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  color: white;
+  background-color: #9356DC;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.Navigation-logo {
+  margin-right: 1em;
+  margin-left: 2em;
+  color: grey;
+}
+
+.Navigation-logo:hover {
+  color: #9356DC;
 }
 
 /* Partie restaurants */
@@ -62,19 +125,18 @@ article {
 }
 
 #Restau-prev {
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px #F2F2F2 solid;
   width: 80%;
   border-radius: 20px;
   background-color: white;
-  -webkit-box-shadow: 6px 6px 6px #F2F2F2;
-          box-shadow: 6px 6px 6px #F2F2F2;
-  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-shadow: 6px 6px 20px #c2c0c0;
+          box-shadow: 6px 6px 20px #c2c0c0;
+  margin-bottom: 20px;
 }
 
 #Restau-prev .Restau-prev__image {
-  height: 200px;
+  height: 400px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
@@ -102,7 +164,8 @@ article {
 }
 
 .Coeur:active {
-  background-color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 #Texte_bas {
