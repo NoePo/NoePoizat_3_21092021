@@ -10,6 +10,11 @@
     margin-left: 15px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 $Primaire : #9356DC;
 $Secondaire : #FF79DA;
 $Tertiaire : #99E2D0;
@@ -190,5 +195,57 @@ footer {
     margin-right: 10px;
 }
 
+
+/* Page 2 */
+
+
+
+.Restau-prev__image2 {
+    width: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    @include centrer;
+}
+
+#Restau-prev2 {
+    width: 50%;
+    background-color: $Grey;
+    position: relative;
+    margin-top: -2em;
+    border-radius: 20px 20px 0px 0px;
+    @include centrer;
+    .Restau-prev__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+.Restau-menu {
+    width: 90%;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 1em;
+    @include centrer;
+    @include box-shadow;
+    .Restau-menu__texte {
+        display: flex;
+        justify-content: space-between;
+    }
+        .Restau-menu__argent {
+            margin-top: 2.1em;
+            margin-right: 1em;
+        }
+}
+
+.Bordure {
+    margin-left: 1em;
+    padding-bottom: 5px;
+    width: 2em;
+    border-bottom: 2px $Tertiaire solid;
+}
+        
 
 

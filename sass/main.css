@@ -9,6 +9,11 @@
   margin-left: 15px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .Logo {
   width: 200px;
   display: block;
@@ -196,5 +201,69 @@ footer {
 .Texte_bas {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* Page 2 */
+.Restau-prev__image2 {
+  width: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Restau-prev2 {
+  width: 50%;
+  background-color: #F2F2F2;
+  position: relative;
+  margin-top: -2em;
+  border-radius: 20px 20px 0px 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Restau-prev2 .Restau-prev__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Restau-menu {
+  width: 90%;
+  border-radius: 15px;
+  background-color: white;
+  padding-left: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-shadow: 6px 6px 20px #c2c0c0;
+          box-shadow: 6px 6px 20px #c2c0c0;
+}
+
+.Restau-menu .Restau-menu__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Restau-menu .Restau-menu__argent {
+  margin-top: 2.1em;
+  margin-right: 1em;
+}
+
+.Bordure {
+  margin-left: 1em;
+  padding-bottom: 5px;
+  width: 2em;
+  border-bottom: 2px #99E2D0 solid;
 }
 /*# sourceMappingURL=main.css.map */
