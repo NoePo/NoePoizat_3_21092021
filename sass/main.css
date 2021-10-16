@@ -1,11 +1,15 @@
 @font-face {
   font-family: 'Roboto';
   src: url("polices/Roboto-Regular.ttf");
+  font-family: 'Roboto-thin';
+  src: url("polices/Roboto-Thin.ttf");
+  font-family: 'Roboto-bold';
+  src: url("polices/Roboto-Bold.ttf");
   font-family: 'Shrikhand';
   src: url("polices/Shrikhand-Regular.otf");
 }
 
-.marge {
+.Localisation_texte {
   margin-left: 15px;
 }
 
@@ -130,7 +134,7 @@ article {
 }
 
 #Restau-prev {
-  width: 80%;
+  width: 70%;
   border-radius: 20px;
   background-color: white;
   margin-right: auto;
@@ -171,6 +175,22 @@ article {
 .Coeur:active {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.Nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  width: 200px;
+  height: 30px;
+  border: 2px black solid;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 12;
 }
 
 #Texte_bas {
@@ -236,14 +256,22 @@ footer {
 }
 
 .Restau-menu {
+  position: relative;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 15px;
   background-color: white;
   padding-left: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-shadow: 6px 6px 20px #c2c0c0;
           box-shadow: 6px 6px 20px #c2c0c0;
+  -webkit-animation: Apparition 2s ease-in-out;
+          animation: Apparition 2s ease-in-out;
 }
 
 .Restau-menu .Restau-menu__texte {
@@ -253,11 +281,89 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .Restau-menu .Restau-menu__argent {
-  margin-top: 2.1em;
   margin-right: 1em;
+  margin-top: 2em;
+}
+
+.Restau-menu:hover .Restau-menu__transition {
+  position: relative;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  right: -70px;
+  -webkit-transform: translate(-70px, 0);
+          transform: translate(-70px, 0);
+}
+
+.Restau-menu__ligne1 {
+  position: absolute;
+}
+
+.Restau-menu__ligne2 {
+  text-overflow: ellipsis;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Transition-logo {
+  display: inline-block;
+  position: relative;
+  color: #99E2D0;
+  background-color: white;
+  right: -35px;
+  top: 35px;
+  -webkit-animation: myrotate 1s ease-in-out infinite;
+          animation: myrotate 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes Apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes myrotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes myrotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
 }
 
 .Bordure {
@@ -265,5 +371,103 @@ footer {
   padding-bottom: 5px;
   width: 2em;
   border-bottom: 2px #99E2D0 solid;
+}
+
+.Restau-menu2 {
+  position: relative;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-shadow: 6px 6px 20px #c2c0c0;
+          box-shadow: 6px 6px 20px #c2c0c0;
+  -webkit-animation: Apparition 4s ease-in-out 0s;
+          animation: Apparition 4s ease-in-out 0s;
+}
+
+.Restau-menu2 .Restau-menu__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.Restau-menu2 .Restau-menu__argent {
+  margin-right: 1em;
+  margin-top: 2em;
+}
+
+.Restau-menu2:hover .Restau-menu__transition {
+  position: relative;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  right: -70px;
+  -webkit-transform: translate(-70px, 0);
+          transform: translate(-70px, 0);
+}
+
+.Restau-menu3 {
+  position: relative;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-shadow: 6px 6px 20px #c2c0c0;
+          box-shadow: 6px 6px 20px #c2c0c0;
+  -webkit-animation: Apparition 6s ease-in-out 0s;
+          animation: Apparition 6s ease-in-out 0s;
+}
+
+.Restau-menu3 .Restau-menu__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.Restau-menu3 .Restau-menu__argent {
+  margin-right: 1em;
+  margin-top: 2em;
+}
+
+.Restau-menu3:hover .Restau-menu__transition {
+  position: relative;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  right: -70px;
+  -webkit-transform: translate(-70px, 0);
+          transform: translate(-70px, 0);
 }
 /*# sourceMappingURL=main.css.map */

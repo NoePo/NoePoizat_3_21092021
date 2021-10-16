@@ -1,12 +1,16 @@
 @font-face {
     font-family: 'Roboto';
     src: url('polices/Roboto-Regular.ttf');
+    font-family: 'Roboto-thin';
+    src: url('polices/Roboto-Thin.ttf');
+    font-family: 'Roboto-bold';
+    src: url('polices/Roboto-Bold.ttf');
     font-family: 'Shrikhand';
     src: url('polices/Shrikhand-Regular.otf')
 }
 
 
-.marge {
+.Localisation_texte {
     margin-left: 15px;
 }
 
@@ -102,7 +106,7 @@ $Grey: #F2F2F2;
     @include centrer;
     @include box-shadow;
     &:hover {
-        background-color: lighten($Secondaire, 20%)
+        background-color: lighten($Secondaire, 20%);
 
     }
     .Navigation-chiffre {
@@ -115,7 +119,6 @@ $Grey: #F2F2F2;
         border-radius: 20px;
     }
 }
-
 
 
 .Navigation-logo {
@@ -138,7 +141,7 @@ article {
 }
 
 #Restau-prev {
-    width: 80%;
+    width: 70%;
     border-radius: 20px;
     background-color: white;
     @include centrer;
@@ -165,6 +168,18 @@ article {
     &:active {
         @include degradé;
     }
+}
+
+.Nouveau {
+    position: absolute;
+    background-color: $Tertiaire;
+    width: 200px;
+    height: 30px;
+    border: 2px black solid;
+    margin-top: 2%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 12;
 }
 
 
@@ -215,6 +230,7 @@ footer {
     margin-top: -2em;
     border-radius: 20px 20px 0px 0px;
     @include centrer;
+    
     .Restau-prev__title {
         display: flex;
         align-items: center;
@@ -224,21 +240,85 @@ footer {
 
 
 .Restau-menu {
+    position: relative;
     width: 90%;
+    display: flex;
     border-radius: 15px;
     background-color: white;
     padding-left: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
     @include centrer;
     @include box-shadow;
+    animation: Apparition 2s ease-in-out;
+
     .Restau-menu__texte {
         display: flex;
         justify-content: space-between;
-    }
-        .Restau-menu__argent {
-            margin-top: 2.1em;
-            margin-right: 1em;
+        width: 100%;
         }
+
+        .Restau-menu__argent {
+            margin-right: 1em;
+            margin-top: 2em;
+        }
+
+        &:hover{
+        .Restau-menu__transition {
+            position: relative;
+            border-radius: 0px 15px 15px 0px;
+            background-color: $Tertiaire;
+            width: 70px;
+            height: 70px;
+            transition: transform 1s ease-in-out;
+            right: -70px;
+            transform: translate(-70px, 0);
+            }}
 }
+
+.Restau-menu__ligne1 {
+    position: absolute;
+}
+.Restau-menu__ligne2 {
+    text-overflow: ellipsis;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.Transition-logo {
+    display: inline-block;
+    position: relative;
+    color: $Tertiaire;
+    background-color: white;
+    right: -35px;
+    top: 35px;
+    animation: myrotate 1s ease-in-out infinite;
+}
+
+
+
+
+
+@keyframes Apparition {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes myrotate {
+    0% {
+      transform: rotate(0deg); 
+    }
+   100% {
+      transform: rotate(359deg);
+}
+}
+
 
 .Bordure {
     margin-left: 1em;
@@ -247,5 +327,77 @@ footer {
     border-bottom: 2px $Tertiaire solid;
 }
         
+
+.Restau-menu2 {
+    position: relative;
+    width: 90%;
+    display: flex;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    @include centrer;
+    @include box-shadow;
+    animation: Apparition 4s ease-in-out 0s;
+    .Restau-menu__texte {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        }
+
+        .Restau-menu__argent {
+            margin-right: 1em;
+            margin-top: 2em;
+        }
+
+        &:hover{
+        .Restau-menu__transition {
+            position: relative;
+            border-radius: 0px 15px 15px 0px;
+            background-color: $Tertiaire;
+            width: 70px;
+            height: 70px;
+            transition: transform 1s ease-in-out;
+            right: -70px;
+            transform: translate(-70px, 0);
+            }}
+}
+
+.Restau-menu3 {
+    position: relative;
+    width: 90%;
+    display: flex;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    @include centrer;
+    @include box-shadow;
+    animation: Apparition 6s ease-in-out 0s;
+    .Restau-menu__texte {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        }
+
+        .Restau-menu__argent {
+            margin-right: 1em;
+            margin-top: 2em;
+        }
+
+        &:hover{
+        .Restau-menu__transition {
+            position: relative;
+            border-radius: 0px 15px 15px 0px;
+            background-color: $Tertiaire;
+            width: 70px;
+            height: 70px;
+            transition: transform 1s ease-in-out;
+            right: -70px;
+            transform: translate(-70px, 0);
+            }}
+}
 
 
