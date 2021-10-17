@@ -1,0 +1,30 @@
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+h1 {
+    font-family: "Roboto-Bold";
+}
+
+h2 {
+    font-family: 'Shrikhand';
+}
+
+.thin {
+    font-family: 'Roboto-thin';
+}
+
+.Restau-menu__ligne1 {
+    position: absolute;
+    font-family: 'Robotobold';
+}
+
+.Restau-menu__ligne2 {
+    text-overflow: ellipsis;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+}

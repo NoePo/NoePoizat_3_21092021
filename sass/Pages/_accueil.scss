@@ -1,0 +1,202 @@
+.Logo {
+    width: 200px;
+    display: block;
+    @include centrer;
+    margin-bottom: 1em;
+}
+
+
+
+.loader {
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 10em;
+    border: 16px solid $Tertiaire; 
+    border-top: 16px solid $Secondaire; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear;
+    animation-fill-mode: forwards;
+  }
+  
+
+
+#Apparition-page {
+    animation: opacity 4s linear;
+}
+
+
+
+#Localisation {
+    background-color: rgb(231, 228, 228);
+    .Localisation_heading {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        margin-left: 42%;
+    }
+        .Localisation_texte {
+            margin-left: 15px;
+            font-family: 'Roboto-bold';
+            font-size: 1.2em;
+        }
+}
+
+
+#Reserver {
+    background-color: $Grey ;
+}
+
+#Haut_page {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Reserver_texte {
+    text-align: center;
+}
+
+
+
+
+.Explorer {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    width: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    @include centrer;
+    @include degradé;
+    @include box-shadow;
+}
+
+
+/* Partie fonctionnement */
+
+
+.Navigation1 {
+    display: flex;
+    align-items: center;
+    background-color: $Grey;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px $Grey;
+    margin-bottom: 40px;
+    width: 60%;
+    @include centrer;
+    @include box-shadow;
+    &:hover {
+        background-color: lighten($Secondaire, 20%);
+
+    }
+    .Navigation-chiffre {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 3px;
+        color: white;
+        background-color: $Primaire;
+        height: 20px;
+        border-radius: 20px;
+    }
+}
+
+.Navigation-titre {
+    margin-left: 20%;
+}
+
+.Navigation-logo {
+    margin-right: 1em;
+    margin-left: 2em;
+    color: grey;
+    &:hover {
+        color: $Primaire;
+}
+}
+
+
+/* Partie restaurants */
+
+
+article {
+    background: $Grey;
+    height: 2150px;
+}
+
+#Restau-prev {
+    width: 70%;
+    border-radius: 20px;
+    background-color: white;
+    @include centrer;
+    @include box-shadow;
+    margin-bottom: 20px;
+    .Restau-prev__image {
+        height: 400px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+        .Restau-prev__heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        
+}
+
+.Restau-titre {
+    padding-top: 2em;
+    margin-left: 15%;
+}
+
+.Coeur {
+    transition: all 400ms linear;
+    &:active {
+        @include degradé;
+    }
+}
+
+.Nouveau {
+    position: absolute;
+    background-color: $Tertiaire;
+    width: 200px;
+    height: 30px;
+    border: 2px black solid;
+    margin-top: 2%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 12;
+}
+
+
+/* Bas de page */
+
+
+#Texte_bas {
+    color: white;
+    padding-left: 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 18, 18);
+}
+
+.Truc_bas {
+    display: flex;
+    align-items: center;
+}
+
+.Texte_bas {
+    margin-left: 10px;
+    margin-right: 10px;
+}

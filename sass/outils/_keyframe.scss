@@ -1,0 +1,38 @@
+@keyframes spin {
+    0% {transform: rotate(0deg);
+        opacity: 1;
+    }
+    90% {opacity: 0.9;}
+
+    100% {transform: rotate(360deg);
+          opacity: 0;
+    } 
+  }
+
+  @keyframes opacity {
+    0% { opacity: 0; 
+    }
+    90% { opacity: 0;
+    } 
+    100% { opacity: 1;
+
+    }
+  }
+
+@keyframes Apparition {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes myrotate {
+    0% {
+      transform: rotate(0deg); 
+    }
+   100% {
+      transform: rotate(359deg);
+}
+}
