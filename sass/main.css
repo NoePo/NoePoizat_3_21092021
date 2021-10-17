@@ -3,14 +3,10 @@
   src: url("polices/Roboto-Regular.ttf");
   font-family: 'Roboto-thin';
   src: url("polices/Roboto-Thin.ttf");
-  font-family: 'Roboto-bold';
-  src: url("polices/Roboto-Bold.ttf");
+  font-family: 'Robotobold';
+  src: url("polices/Roboto-Bold-webfont.woff") format("woff");
   font-family: 'Shrikhand';
   src: url("polices/Shrikhand-Regular.otf");
-}
-
-.Localisation_texte {
-  margin-left: 15px;
 }
 
 a {
@@ -23,19 +19,118 @@ a {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1em;
 }
 
-#Haut_page {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+.Header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.Header-menu .Logo-menu {
+  width: 200px;
+  display: block;
+  margin-left: 12%;
+}
+
+.Header-menu .Header-menu_fleche {
+  margin-left: 28%;
+}
+
+.loader {
+  position: absolute;
+  margin-left: 42%;
+  margin-top: 10em;
+  border: 16px solid #99E2D0;
+  border-top: 16px solid #FF79DA;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 3s linear;
+          animation: spin 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+#Apparition-page {
+  -webkit-animation: opacity 4s linear;
+          animation: opacity 4s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-family: "Roboto-Bold";
+}
+
+h2 {
+  font-family: 'Shrikhand';
 }
 
 #Localisation {
   background-color: #e7e4e4;
 }
 
-.Localisation_heading {
+#Localisation .Localisation_heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,8 +138,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 42%;
+}
+
+#Localisation .Localisation_texte {
+  margin-left: 15px;
+  font-family: 'Roboto-bold';
+  font-size: 1.2em;
 }
 
 #Reserver {
@@ -61,8 +161,12 @@ a {
           flex-direction: column;
 }
 
-.Texte_centre {
+.Reserver_texte {
   text-align: center;
+}
+
+.thin {
+  font-family: 'Roboto-thin';
 }
 
 .Explorer {
@@ -96,7 +200,7 @@ a {
   border-radius: 20px;
   -webkit-box-shadow: 6px 6px 6px #F2F2F2;
           box-shadow: 6px 6px 6px #F2F2F2;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 60%;
   margin-right: auto;
   margin-left: auto;
@@ -118,6 +222,10 @@ a {
   border-radius: 20px;
 }
 
+.Navigation-titre {
+  margin-left: 20%;
+}
+
 .Navigation-logo {
   margin-right: 1em;
   margin-left: 2em;
@@ -131,6 +239,7 @@ a {
 /* Partie restaurants */
 article {
   background: #F2F2F2;
+  height: 2150px;
 }
 
 #Restau-prev {
@@ -167,6 +276,11 @@ article {
   margin-right: 1em;
 }
 
+.Restau-titre {
+  padding-top: 2em;
+  margin-left: 15%;
+}
+
 .Coeur {
   -webkit-transition: all 400ms linear;
   transition: all 400ms linear;
@@ -195,6 +309,7 @@ article {
 
 #Texte_bas {
   color: white;
+  padding-left: 2em;
 }
 
 footer {
@@ -206,7 +321,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #131212;
-  padding-left: 5%;
 }
 
 .Truc_bas {
@@ -251,8 +365,15 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+#Restau-prev2 .Restau-prev__titre {
+  font-family: 'Shrikhand';
 }
 
 .Restau-menu {
@@ -306,6 +427,7 @@ footer {
 
 .Restau-menu__ligne1 {
   position: absolute;
+  font-family: 'Robotobold';
 }
 
 .Restau-menu__ligne2 {
@@ -324,6 +446,7 @@ footer {
   top: 35px;
   -webkit-animation: myrotate 1s ease-in-out infinite;
           animation: myrotate 1s ease-in-out infinite;
+  border-radius: 60%;
 }
 
 @-webkit-keyframes Apparition {

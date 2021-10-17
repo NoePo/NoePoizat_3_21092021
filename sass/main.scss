@@ -3,16 +3,15 @@
     src: url('polices/Roboto-Regular.ttf');
     font-family: 'Roboto-thin';
     src: url('polices/Roboto-Thin.ttf');
-    font-family: 'Roboto-bold';
-    src: url('polices/Roboto-Bold.ttf');
+    font-family: 'Robotobold';
+    src: url('polices/Roboto-Bold-webfont.woff') format('woff');
     font-family: 'Shrikhand';
     src: url('polices/Shrikhand-Regular.otf')
 }
 
+@import "./outils/mixin";
 
-.Localisation_texte {
-    margin-left: 15px;
-}
+
 
 a {
     text-decoration: none;
@@ -24,40 +23,96 @@ $Secondaire : #FF79DA;
 $Tertiaire : #99E2D0;
 $Grey: #F2F2F2;
 
-@mixin centrer {
-    margin-right: auto;
-    margin-left: auto;
-}
 
-@mixin box-shadow {
-    box-shadow: 6px 6px 20px rgb(194, 192, 192);
-}
-
-@mixin degradé {
-    background: linear-gradient($Secondaire, $Primaire);
-}
 
 .Logo {
     width: 200px;
     display: block;
     @include centrer;
+    margin-bottom: 1em;
 }
 
-#Haut_page {
-    width: 80%;
-    @include centrer;
+
+.Header-menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+        .Logo-menu {
+            width: 200px;
+            display: block;
+            margin-left: 12%;
+        }
+        .Header-menu_fleche {
+            margin-left: 28%;
+        }
 }
+
+.loader {
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 10em;
+    border: 16px solid $Tertiaire; 
+    border-top: 16px solid $Secondaire; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear;
+    animation-fill-mode: forwards;
+  }
+  
+@keyframes spin {
+    0% {transform: rotate(0deg);
+        opacity: 1;
+    }
+    90% {opacity: 0.9;}
+
+    100% {transform: rotate(360deg);
+          opacity: 0;
+    } 
+  }
+
+
+#Apparition-page {
+    animation: opacity 4s linear;
+}
+
+@keyframes opacity {
+    0% { opacity: 0; 
+    }
+    90% { opacity: 0;
+    } 
+    100% { opacity: 1;
+
+    }
+  }
+
+
+h1 {
+    font-family: "Roboto-Bold";
+}
+
+h2 {
+    font-family: 'Shrikhand';
+}
+
+
 
 #Localisation {
     background-color: rgb(231, 228, 228);
+    .Localisation_heading {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        margin-left: 42%;
+    }
+        .Localisation_texte {
+            margin-left: 15px;
+            font-family: 'Roboto-bold';
+            font-size: 1.2em;
+        }
 }
 
-.Localisation_heading {
-    display: flex;
-    align-items: center;
-    width: 30%;
-    @include centrer;
-}
+
 
 #Reserver {
     background-color: $Grey ;
@@ -69,8 +124,11 @@ $Grey: #F2F2F2;
 }
 
 
-.Texte_centre {
+.Reserver_texte {
     text-align: center;
+}
+.thin {
+    font-family: 'Roboto-thin';
 }
 
 
@@ -101,7 +159,7 @@ $Grey: #F2F2F2;
     padding-bottom: 10px;
     border-radius: 20px;
     box-shadow: 6px 6px 6px $Grey;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 60%;
     @include centrer;
     @include box-shadow;
@@ -120,6 +178,9 @@ $Grey: #F2F2F2;
     }
 }
 
+.Navigation-titre {
+    margin-left: 20%;
+}
 
 .Navigation-logo {
     margin-right: 1em;
@@ -138,6 +199,7 @@ $Grey: #F2F2F2;
 
 article {
     background: $Grey;
+    height: 2150px;
 }
 
 #Restau-prev {
@@ -161,6 +223,12 @@ article {
             margin-left: 1em;
             margin-right: 1em;
         }
+        
+}
+
+.Restau-titre {
+    padding-top: 2em;
+    margin-left: 15%;
 }
 
 .Coeur {
@@ -191,13 +259,13 @@ article {
 
 #Texte_bas {
     color: white;
+    padding-left: 2em;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     background-color: rgb(19, 18, 18);
-    padding-left: 5% ;
 }
 
 .Truc_bas {
@@ -234,7 +302,12 @@ footer {
     .Restau-prev__title {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+    .Restau-prev__titre {
+        font-family: 'Shrikhand';
     }
 }
 
@@ -278,7 +351,9 @@ footer {
 
 .Restau-menu__ligne1 {
     position: absolute;
+    font-family: 'Robotobold';
 }
+
 .Restau-menu__ligne2 {
     text-overflow: ellipsis;
     width: 90%;
@@ -295,9 +370,8 @@ footer {
     right: -35px;
     top: 35px;
     animation: myrotate 1s ease-in-out infinite;
+    border-radius: 60%;
 }
-
-
 
 
 

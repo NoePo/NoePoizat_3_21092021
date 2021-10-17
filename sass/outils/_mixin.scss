@@ -1,0 +1,12 @@
+@mixin centrer {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin box-shadow {
+    box-shadow: 6px 6px 20px rgb(194, 192, 192);
+}
+
+@mixin degradé {
+    background: linear-gradient($Secondaire, $Primaire);
+}
