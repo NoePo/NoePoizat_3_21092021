@@ -5,15 +5,15 @@
         .Logo-menu {
             width: 200px;
             display: block;
-            margin-left: 12%;
+            margin-left: 18%;
         }
         .Header-menu_fleche {
-            margin-left: 28%;
+            margin-left: 22%;
         }
 }
 
 .Restau-prev__image2 {
-    width: 50%;
+    width: 60%;
     overflow: hidden;
     object-fit: cover;
     display: block;
@@ -21,12 +21,13 @@
 }
 
 #Restau-prev2 {
-    width: 50%;
+    width: 60%;
     background-color: $Grey;
     position: relative;
     margin-top: -2em;
     border-radius: 20px 20px 0px 0px;
     @include centrer;
+    height: 1000px;
     
     .Restau-prev__title {
         display: flex;
@@ -84,14 +85,15 @@
 .Transition-logo {
     display: inline-block;
     position: relative;
-    color: $Tertiaire;
-    background-color: white;
-    right: -35px;
-    top: 35px;
+    background: white;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    right: -25px;
+    top: 25px;
     animation: myrotate 1s ease-in-out infinite;
     border-radius: 60%;
 }
-
 
 
 
@@ -175,5 +177,16 @@
             transform: translate(-70px, 0);
             }}
 }
+
+#Texte_bas2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 2em;
+    width: 57.5%;
+    @include centrer;
+    background-color: rgb(19, 18, 18);
+}
+
 
 

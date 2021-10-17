@@ -8,5 +8,7 @@
 }
 
 @mixin degradé {
-    background: linear-gradient($Secondaire, $Primaire);
+    background: linear-gradient($Primaire, $Secondaire);
 }
+
+

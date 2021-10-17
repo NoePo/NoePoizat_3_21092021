@@ -128,7 +128,7 @@ article {
     height: 2150px;
 }
 
-#Restau-prev {
+.Restau-prev {
     width: 70%;
     border-radius: 20px;
     background-color: white;
@@ -158,9 +158,12 @@ article {
 }
 
 .Coeur {
-    transition: all 400ms linear;
+    transition: all 800ms linear;
     &:active {
         @include degradé;
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
     }
 }
 
@@ -199,4 +202,25 @@ footer {
 .Texte_bas {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (min-width: 1280px)
+{
+
+article {
+    height: 1000px;
+}
+
+.Restau-prev {
+    width: 40%;
+    margin: none;
+    .Restau-prev__image {
+        height: 300px;
+    }
+}
+
+.Restau-prev__ligne {
+    display: flex;
+}
+    
 }
