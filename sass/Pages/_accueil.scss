@@ -93,6 +93,7 @@
     @include box-shadow;
     &:hover {
         background-color: lighten($Secondaire, 20%);
+        color: $Primaire !important;
 
     }
     .Navigation-chiffre {
@@ -114,9 +115,6 @@
     margin-right: 1em;
     margin-left: 2em;
     color: grey;
-    &:hover {
-        color: $Primaire;
-}
 }
 
 
@@ -170,13 +168,13 @@ article {
 .Nouveau {
     position: absolute;
     background-color: $Tertiaire;
-    width: 200px;
-    height: 30px;
-    border: 2px black solid;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 2%;
+    margin-left: 55%;
     display: flex;
-    align-items: flex-end;
-    z-index: 12;
+    color: rgb(11, 95, 11);
+    border-radius: 5%;
 }
 
 
@@ -221,6 +219,10 @@ article {
 
 .Restau-prev__ligne {
     display: flex;
+}
+
+.Nouveau {
+    margin-left: 30%;
 }
     
 }

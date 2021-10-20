@@ -18,6 +18,7 @@
     object-fit: cover;
     display: block;
     @include centrer;
+    height: 500px;
 }
 
 #Restau-prev2 {
@@ -27,8 +28,28 @@
     margin-top: -2em;
     border-radius: 20px 20px 0px 0px;
     @include centrer;
-    height: 1000px;
+    height: 1150px;
     
+    .Restau-prev__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 2em;
+    }
+    .Restau-prev__titre {
+        font-family: 'Shrikhand';
+    }
+}
+
+#Restau-prev3 {
+    width: 60%;
+    background-color: $Grey;
+    position: relative;
+    margin-top: -2em;
+    border-radius: 20px 20px 0px 0px;
+    @include centrer;
+    height: 1250px;
     .Restau-prev__title {
         display: flex;
         align-items: center;
@@ -178,6 +199,21 @@
             }}
 }
 
+.Restau-menu__btn {
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 50px;
+        color: white;
+        width: 30%;
+        margin-top: 3em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @include centrer;
+        @include degradé;
+        @include box-shadow;
+}
+
+
 #Texte_bas2 {
     display: flex;
     flex-direction: column;
@@ -188,5 +224,8 @@
     background-color: rgb(19, 18, 18);
 }
 
+.Contact {
+    color: white;
+}
 
 

@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('polices/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: 'Roboto-thin';
+    src: url('polices/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('polices/Roboto-Bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('polices/Shrikhand-Regular.otf')
+}
+
+
+p {
+    font-family: 'Roboto';
+}
 
 a {
     text-decoration: none;
@@ -16,13 +37,18 @@ h2 {
 .thin {
     font-family: 'Roboto-thin';
 }
+.Restau-prev__ligne1 {
+    font-family: "Roboto-Bold";
+}
+
 
 .Restau-menu__ligne1 {
     position: absolute;
-    font-family: 'Robotobold';
+    font-family: 'Roboto-bold';
 }
 
 .Restau-menu__ligne2 {
+    color: rgb(66, 64, 64);
     text-overflow: ellipsis;
     width: 90%;
     white-space: nowrap;
