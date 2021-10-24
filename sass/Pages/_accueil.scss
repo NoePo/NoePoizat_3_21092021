@@ -38,9 +38,16 @@
     }
         .Localisation_texte {
             margin-left: 15px;
-            font-family: 'Roboto-bold';
             font-size: 1.2em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            border: none;
+            background-color: rgb(231, 228, 228);
         }
+}
+::placeholder {
+    color: black;
+    opacity: 1;
 }
 
 
@@ -159,7 +166,7 @@ article {
 
 .Coeur {
     transition: all 800ms linear;
-    &:active {
+    &:hover {
         @include degradé;
         background-clip:text;
         -webkit-background-clip:text;

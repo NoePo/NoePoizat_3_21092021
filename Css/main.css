@@ -128,8 +128,16 @@ h2 {
 }
 #Localisation .Localisation_texte {
   margin-left: 15px;
-  font-family: "Roboto-bold";
   font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: none;
+  background-color: #e7e4e4;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
 }
 
 #Reserver {
@@ -240,7 +248,7 @@ article {
 .Coeur {
   transition: all 800ms linear;
 }
-.Coeur:active {
+.Coeur:hover {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
