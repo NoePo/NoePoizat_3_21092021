@@ -84,14 +84,6 @@ h2 {
     opacity: 1;
   }
 }
-@keyframes myrotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
 .Logo {
   width: 200px;
   display: block;
@@ -251,7 +243,6 @@ article {
 .Coeur:hover {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -296,7 +287,6 @@ footer {
 
   .Restau-prev {
     width: 40%;
-    margin: none;
   }
   .Restau-prev .Restau-prev__image {
     height: 300px;
@@ -414,18 +404,22 @@ footer {
   right: -70px;
   transform: translate(-70px, 0);
 }
-
-.Transition-logo {
+.Restau-menu:hover .Transition-logo {
   display: inline-block;
   position: relative;
   background: white;
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
   right: -25px;
   top: 25px;
-  animation: myrotate 1s ease-in-out infinite;
   border-radius: 60%;
+  transition: transform 1s ease-in-out 0.2s;
+  transform: rotate(360deg);
+  opacity: 1;
+}
+
+.Transition-logo {
+  opacity: 0;
 }
 
 .Bordure {

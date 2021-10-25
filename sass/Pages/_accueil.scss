@@ -169,7 +169,6 @@ article {
     &:hover {
         @include degradé;
         background-clip:text;
-        -webkit-background-clip:text;
         color:transparent;
     }
 }
@@ -220,7 +219,6 @@ article {
 
 .Restau-prev {
     width: 40%;
-    margin: none;
     .Restau-prev__image {
         height: 300px;
     }
