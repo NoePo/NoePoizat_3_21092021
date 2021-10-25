@@ -243,6 +243,7 @@ article {
 .Coeur:hover {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -409,6 +410,7 @@ footer {
   position: relative;
   background: white;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   right: -25px;
   top: 25px;
