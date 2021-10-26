@@ -557,4 +557,9 @@ footer {
   color: white;
 }
 
+.Truc_bas {
+  display: flex;
+  align-items: center;
+}
+
 /*# sourceMappingURL=main.css.map */
