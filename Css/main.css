@@ -464,6 +464,20 @@ footer {
   right: -70px;
   transform: translate(-70px, 0);
 }
+.Restau-menu2:hover .Transition-logo {
+  display: inline-block;
+  position: relative;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  right: -25px;
+  top: 25px;
+  border-radius: 60%;
+  transition: transform 1s ease-in-out 0.2s;
+  transform: rotate(360deg);
+  opacity: 1;
+}
 
 .Restau-menu3 {
   position: relative;
@@ -497,6 +511,20 @@ footer {
   transition: transform 1s ease-in-out;
   right: -70px;
   transform: translate(-70px, 0);
+}
+.Restau-menu3:hover .Transition-logo {
+  display: inline-block;
+  position: relative;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  right: -25px;
+  top: 25px;
+  border-radius: 60%;
+  transition: transform 1s ease-in-out 0.2s;
+  transform: rotate(360deg);
+  opacity: 1;
 }
 
 .Restau-menu__btn {
