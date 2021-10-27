@@ -40,6 +40,11 @@ h2 {
   font-family: "Roboto-thin";
 }
 
+.Restau-prev__titre {
+  font-family: "Shrikhand";
+  font-size: 3em;
+}
+
 .Restau-prev__ligne1 {
   font-family: "Roboto-Bold";
 }
@@ -63,6 +68,11 @@ h2 {
   }
 
   h2 {
+    font-size: 2em;
+  }
+
+  .Restau-prev__titre {
+    font-family: "Shrikhand";
     font-size: 2em;
   }
 }
@@ -398,7 +408,7 @@ footer {
   border-radius: 60px 60px 0px 0px;
   margin-right: auto;
   margin-left: auto;
-  height: 1150px;
+  height: 2100px;
 }
 #Restau-prev2 .Restau-prev__title {
   display: flex;
@@ -408,11 +418,8 @@ footer {
   margin-right: 3em;
   padding-top: 1em;
 }
-#Restau-prev2 .Restau-prev__titre {
-  font-family: "Shrikhand";
-}
 
-sssss #Restau-prev3 {
+#Restau-prev3 {
   width: 60%;
   background-color: #F2F2F2;
   position: relative;
@@ -422,14 +429,14 @@ sssss #Restau-prev3 {
   margin-left: auto;
   height: 1250px;
 }
-sssss #Restau-prev3 .Restau-prev__title {
+#Restau-prev3 .Restau-prev__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: 1em;
   margin-right: 2em;
 }
-sssss #Restau-prev3 .Restau-prev__titre {
+#Restau-prev3 .Restau-prev__titre {
   font-family: "Shrikhand";
 }
 
@@ -608,8 +615,6 @@ sssss #Restau-prev3 .Restau-prev__titre {
   flex-direction: column;
   color: white;
   padding-left: 2em;
-  margin-right: auto;
-  margin-left: auto;
   background-color: #131212;
 }
 
@@ -623,10 +628,6 @@ sssss #Restau-prev3 .Restau-prev__titre {
 }
 
 @media screen and (min-width: 1280px) {
-  .Header-menu .Logo-menu {
-    width: 200px;
-  }
-
   .Restau-prev__image2 {
     width: 60%;
     overflow: hidden;
@@ -639,6 +640,22 @@ sssss #Restau-prev3 .Restau-prev__titre {
 
   #Restau-prev2 {
     width: 60%;
+    height: 1150px;
+  }
+
+  #Texte_bas2 {
+    width: 57.3%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .Header-menu_fleche {
+    margin-left: 20%;
+  }
+
+  .Header-menu .Logo-menu {
+    width: 200px;
+    margin-left: 20%;
   }
 }
 

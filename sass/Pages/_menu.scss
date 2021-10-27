@@ -26,7 +26,7 @@
     margin-top: -3em;
     border-radius: 60px 60px 0px 0px;
     @include centrer;
-    height: 1150px;
+    height: 2100px;
     
     .Restau-prev__title {
         display: flex;
@@ -36,11 +36,8 @@
         margin-right: 3em;
         padding-top: 1em;
     }
-    .Restau-prev__titre {
-        font-family: 'Shrikhand';
-    }
 }
-sssss
+
 #Restau-prev3 {
     width: 60%;
     background-color: $Grey;
@@ -253,7 +250,6 @@ sssss
     flex-direction: column;
     color: white;
     padding-left: 2em;
-    @include centrer;
     background-color: rgb(19, 18, 18);
 }
 
@@ -269,11 +265,7 @@ sssss
 
 @media screen and (min-width: 1280px)
 {
-.Header-menu {
-    .Logo-menu {
-        width: 200px;
-    }  
-}
+
 
 .Restau-prev__image2 {
     width: 60%;
@@ -286,5 +278,26 @@ sssss
 
 #Restau-prev2 {
     width: 60%;
+    height: 1150px;
 }
+
+#Texte_bas2 {
+    width: 57.3%;
+    @include centrer;
+}
+
+.Header-menu_fleche {
+    margin-left: 20%;
+}
+
+.Header-menu {
+.Logo-menu {
+    width: 200px;
+    margin-left: 20%;
+}
+}
+
+
+
+
 }
