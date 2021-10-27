@@ -1,5 +1,5 @@
 .Logo {
-    width: 200px;
+    width: 400px;
     display: block;
     @include centrer;
     margin-bottom: 1em;
@@ -34,11 +34,11 @@
         display: flex;
         align-items: center;
         width: 30%;
-        margin-left: 42%;
+        @include centrer;
     }
         .Localisation_texte {
             margin-left: 15px;
-            font-size: 1.2em;
+            font-size: 2em;
             margin-top: 0.5em;
             margin-bottom: 0.5em;
             border: none;
@@ -73,9 +73,9 @@
     text-align: center;
     border-radius: 50px;
     color: white;
-    width: 30%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 45%;
+    padding-top: 18px;
+    padding-bottom: 18px;
     margin-bottom: 50px;
     @include centrer;
     @include degradé;
@@ -92,23 +92,22 @@
     background-color: $Grey;
     padding-top: 10px ;
     padding-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 35px;
     box-shadow: 6px 6px 6px $Grey;
     margin-bottom: 40px;
-    width: 60%;
+    width: 90%;
     @include centrer;
     @include box-shadow;
     &:hover {
         background-color: lighten($Secondaire, 20%);
-
     }
     .Navigation-chiffre {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 13px;
+        padding-right: 13px;
         padding-top: 3px;
         color: white;
         background-color: $Primaire;
-        height: 20px;
+        height: 40px;
         border-radius: 20px;
     }
 }
@@ -117,7 +116,8 @@
 }
 
 .Navigation-titre {
-    margin-left: 20%;
+    margin-left: 5%;
+    font-size: 2.5em;
 }
 
 .Navigation-logo {
@@ -132,7 +132,7 @@
 
 article {
     background: $Grey;
-    height: 2150px;
+    height: 2600px;
 }
 
 .Restau-prev {
@@ -162,6 +162,7 @@ article {
 .Restau-titre {
     padding-top: 2em;
     margin-left: 15%;
+    font-size: 2.5em;
 }
 
 .Coeur {
@@ -180,11 +181,12 @@ article {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 2%;
-    margin-left: 55%;
+    margin-left: 48%;
     display: flex;
     color: rgb(11, 95, 11);
     border-radius: 5%;
 }
+
 
 
 /* Bas de page */
@@ -214,6 +216,14 @@ footer {
 @media screen and (min-width: 1280px)
 {
 
+.Logo {
+    width: 200px;
+}
+
+.Localisation_texte {
+    font-size: 1.2em;
+}
+
 article {
     height: 1000px;
 }
@@ -234,8 +244,55 @@ article {
 }
 
 .Restau-titre {
-    margin-left: 45%;
-    padding-bottom: 2em;
+    margin-left: 42%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 2em;
 }
 
+.Navigation1 {
+    width: 60%;
+    border-radius: 20px
+}
+.Navigation-titre {
+    margin-left: 20%;
+    font-size: 2em;
+}
+
+
+
+.Navigation1 {
+    .Navigation-chiffre {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 3px;
+        height: 21px;
+}
+}
+
+#Localisation {
+.Localisation_heading {
+    margin-left: 40%;
+}}
+
+
+
+.Explorer {
+    width: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+#Localisation {
+        .Localisation_texte {
+            font-size: 1.5em;
+        }
+}
+
+.Nouveau {
+    margin-left: 55%;
+}
+
+  
 }

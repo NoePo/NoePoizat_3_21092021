@@ -3,17 +3,15 @@
     align-items: center;
     margin-bottom: 1em;
         .Logo-menu {
-            width: 200px;
+            width: 300px;
             display: block;
-            margin-left: 18%;
+            @include centrer;
         }
-        .Header-menu_fleche {
-            margin-left: 22%;
-        }
+        
 }
 
 .Restau-prev__image2 {
-    width: 60%;
+    width: 100%;
     overflow: hidden;
     object-fit: cover;
     display: block;
@@ -22,11 +20,11 @@
 }
 
 #Restau-prev2 {
-    width: 60%;
+    width: 100%;
     background-color: $Grey;
     position: relative;
-    margin-top: -2em;
-    border-radius: 20px 20px 0px 0px;
+    margin-top: -3em;
+    border-radius: 60px 60px 0px 0px;
     @include centrer;
     height: 1150px;
     
@@ -34,14 +32,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-left: 1em;
-        margin-right: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        padding-top: 1em;
     }
     .Restau-prev__titre {
         font-family: 'Shrikhand';
     }
 }
-
+sssss
 #Restau-prev3 {
     width: 60%;
     background-color: $Grey;
@@ -93,7 +92,7 @@
             border-radius: 0px 15px 15px 0px;
             background-color: $Tertiaire;
             width: 70px;
-            height: 70px;
+            height: 71px;
             transition: transform 1s ease-in-out;
             right: -70px;
             transform: translate(-70px, 0);
@@ -118,8 +117,6 @@
 .Transition-logo {
     opacity: 0;
 }
-
-
 
 
 
@@ -163,7 +160,7 @@
             border-radius: 0px 15px 15px 0px;
             background-color: $Tertiaire;
             width: 70px;
-            height: 70px;
+            height: 71px;
             transition: transform 1s ease-in-out;
             right: -70px;
             transform: translate(-70px, 0);
@@ -214,7 +211,7 @@
             border-radius: 0px 15px 15px 0px;
             background-color: $Tertiaire;
             width: 70px;
-            height: 70px;
+            height: 71px;
             transition: transform 1s ease-in-out;
             right: -70px;
             transform: translate(-70px, 0);
@@ -256,7 +253,6 @@
     flex-direction: column;
     color: white;
     padding-left: 2em;
-    width: 57.5%;
     @include centrer;
     background-color: rgb(19, 18, 18);
 }
@@ -270,3 +266,25 @@
     align-items: center;
 }
 
+
+@media screen and (min-width: 1280px)
+{
+.Header-menu {
+    .Logo-menu {
+        width: 200px;
+    }  
+}
+
+.Restau-prev__image2 {
+    width: 60%;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    @include centrer;
+    height: 500px;
+}
+
+#Restau-prev2 {
+    width: 60%;
+}
+}
