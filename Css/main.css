@@ -402,10 +402,6 @@ footer {
   #Localisation .Localisation_texte {
     font-size: 1.5em;
   }
-
-  .Nouveau {
-    margin-left: 55%;
-  }
 }
 .Header-menu {
   display: flex;
