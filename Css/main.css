@@ -60,6 +60,7 @@ h2 {
   width: 90%;
   white-space: nowrap;
   overflow: hidden;
+  padding-top: 36px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -74,6 +75,10 @@ h2 {
   .Restau-prev__titre {
     font-family: "Shrikhand";
     font-size: 2em;
+  }
+
+  .Restau-menu__ligne2 {
+    padding-top: 20px;
   }
 }
 @keyframes spin {
@@ -168,6 +173,16 @@ h2 {
 
 .Reserver_texte {
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 35%;
+}
+
+.Reserver_texte2 {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
 }
 
 .Explorer {
@@ -330,6 +345,20 @@ footer {
 
   .Restau-prev__ligne {
     display: flex;
+  }
+
+  .Reserver_texte {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 28%;
+  }
+
+  .Reserver_texte2 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 28%;
   }
 
   .Nouveau {

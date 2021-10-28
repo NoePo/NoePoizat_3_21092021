@@ -63,6 +63,7 @@ h2 {
     width: 90%;
     white-space: nowrap;
     overflow: hidden;
+    padding-top: 36px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -78,6 +79,10 @@ h2 {
 .Restau-prev__titre {
     font-family: 'Shrikhand';
     font-size: 2em;
+}
+
+.Restau-menu__ligne2 {
+    padding-top: 20px;
 }
 
 }

@@ -63,6 +63,14 @@
 
 .Reserver_texte {
     text-align: center;
+    @include centrer;
+    width: 35%;
+}
+
+.Reserver_texte2 {
+    text-align: center;
+    @include centrer;
+    width: 60%;
 }
 
 
@@ -237,6 +245,18 @@ article {
 
 .Restau-prev__ligne {
     display: flex;
+}
+
+.Reserver_texte {
+    text-align: center;
+    @include centrer;
+    width: 28%;
+}
+
+.Reserver_texte2 {
+    text-align: center;
+    @include centrer;
+    width: 28%;
 }
 
 .Nouveau {
