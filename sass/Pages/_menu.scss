@@ -84,31 +84,32 @@
         }
 
         &:hover{
-        .Restau-menu__transition {
-            position: relative;
-            border-radius: 0px 15px 15px 0px;
-            background-color: $Tertiaire;
-            width: 70px;
-            height: 71px;
-            transition: transform 1s ease-in-out;
-            right: -70px;
-            transform: translate(-70px, 0);
-            }
-            .Transition-logo {
-                display: inline-block;
+            .Restau-menu__transition {
                 position: relative;
-                background: white;
-                background-clip:text;
-                -webkit-background-clip:text;
-                color:transparent;
-                right: -25px;
-                top: 25px;
-                border-radius: 60%;
-                transition: transform 1s ease-in-out 0.2s;
-                transform: rotate(360deg);
-                opacity: 1;
-            }
-        }
+                border-radius: 0px 15px 15px 0px;
+                background-color: $Tertiaire;
+                width: 300px;
+                height: 139px;
+                transition: transform 1s ease-in-out;
+                right: -220px;
+                transform: translate(-150px, 0);
+                }
+                .Transition-logo {
+                    font-size: 2em;
+                    display: inline-block;
+                    position: relative;
+                    background: white;
+                    background-clip:text;
+                    -webkit-background-clip:text;
+                    color:transparent;
+                    right: -58px;
+                    top: 55px;
+                    border-radius: 60%;
+                    transition: transform 1s ease-in-out 0.2s;
+                    transform: rotate(360deg);
+                    opacity: 1;
+                }
+                }
 }
 
 .Transition-logo {
@@ -152,31 +153,32 @@
         }
 
         &:hover{
-        .Restau-menu__transition {
-            position: relative;
-            border-radius: 0px 15px 15px 0px;
-            background-color: $Tertiaire;
-            width: 70px;
-            height: 71px;
-            transition: transform 1s ease-in-out;
-            right: -70px;
-            transform: translate(-70px, 0);
-            }
-            .Transition-logo {
-                display: inline-block;
+            .Restau-menu__transition {
                 position: relative;
-                background: white;
-                background-clip:text;
-                -webkit-background-clip:text;
-                color:transparent;
-                right: -25px;
-                top: 25px;
-                border-radius: 60%;
-                transition: transform 1s ease-in-out 0.2s;
-                transform: rotate(360deg);
-                opacity: 1;
-            }
-            }
+                border-radius: 0px 15px 15px 0px;
+                background-color: $Tertiaire;
+                width: 300px;
+                height: 139px;
+                transition: transform 1s ease-in-out;
+                right: -220px;
+                transform: translate(-150px, 0);
+                }
+                .Transition-logo {
+                    font-size: 2em;
+                    display: inline-block;
+                    position: relative;
+                    background: white;
+                    background-clip:text;
+                    -webkit-background-clip:text;
+                    color:transparent;
+                    right: -58px;
+                    top: 55px;
+                    border-radius: 60%;
+                    transition: transform 1s ease-in-out 0.2s;
+                    transform: rotate(360deg);
+                    opacity: 1;
+                }
+                }
 }
 
 .Restau-menu3 {
@@ -207,21 +209,22 @@
             position: relative;
             border-radius: 0px 15px 15px 0px;
             background-color: $Tertiaire;
-            width: 70px;
-            height: 71px;
+            width: 300px;
+            height: 139px;
             transition: transform 1s ease-in-out;
-            right: -70px;
-            transform: translate(-70px, 0);
+            right: -220px;
+            transform: translate(-150px, 0);
             }
             .Transition-logo {
+                font-size: 2em;
                 display: inline-block;
                 position: relative;
                 background: white;
                 background-clip:text;
                 -webkit-background-clip:text;
                 color:transparent;
-                right: -25px;
-                top: 25px;
+                right: -58px;
+                top: 55px;
                 border-radius: 60%;
                 transition: transform 1s ease-in-out 0.2s;
                 transform: rotate(360deg);
@@ -242,6 +245,11 @@
         @include centrer;
         @include degradé;
         @include box-shadow;
+        opacity: 0.9;
+        &:hover {
+        opacity: 1;
+        @include box-shadow2;
+        }
 }
 
 
@@ -297,7 +305,52 @@
 }
 }
 
+.Restau-menu {
+        &:hover{
+        .Restau-menu__transition {
+            width: 70px;
+            height: 71px;
+            right: -70px;
+            transform: translate(-70px, 0);
+            }
+            .Transition-logo {
+                font-size: 1em;
+                right: -25px;
+                top: 25px;
+            }
+        }
+}
 
+.Restau-menu2 {
+    &:hover{
+    .Restau-menu__transition {
+        width: 70px;
+        height: 71px;
+        right: -70px;
+        transform: translate(-70px, 0);
+        }
+        .Transition-logo {
+            font-size: 1em;
+            right: -25px;
+            top: 25px;
+        }
+    }
+}
 
+.Restau-menu3 {
+    &:hover{
+    .Restau-menu__transition {
+        width: 70px;
+        height: 71px;
+        right: -70px;
+        transform: translate(-70px, 0);
+        }
+        .Transition-logo {
+            font-size: 1em;
+            right: -25px;
+            top: 25px;
+        }
+    }
+}
 
 }

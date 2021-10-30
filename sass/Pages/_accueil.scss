@@ -88,7 +88,16 @@
     @include centrer;
     @include degradé;
     @include box-shadow;
+    opacity: 0.9;
+    &:hover {
+    opacity: 1;
+    @include box-shadow2;
+    }
 }
+
+
+
+
 
 
 /* Partie fonctionnement */
@@ -101,13 +110,13 @@
     padding-top: 10px ;
     padding-bottom: 10px;
     border-radius: 35px;
-    box-shadow: 6px 6px 6px $Grey;
     margin-bottom: 40px;
     width: 90%;
     @include centrer;
     @include box-shadow;
     &:hover {
         background-color: lighten($Secondaire, 20%);
+        @include box-shadow2;
     }
     .Navigation-chiffre {
         padding-left: 13px;
