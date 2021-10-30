@@ -39,13 +39,13 @@
 }
 
 #Restau-prev3 {
-    width: 60%;
+    width: 100%;
     background-color: $Grey;
     position: relative;
-    margin-top: -2em;
+    margin-top: -3em;
     border-radius: 20px 20px 0px 0px;
     @include centrer;
-    height: 1250px;
+    height: 2200px;
     .Restau-prev__title {
         display: flex;
         align-items: center;

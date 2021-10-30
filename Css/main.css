@@ -450,14 +450,14 @@ footer {
 }
 
 #Restau-prev3 {
-  width: 60%;
+  width: 100%;
   background-color: #F2F2F2;
   position: relative;
-  margin-top: -2em;
+  margin-top: -3em;
   border-radius: 20px 20px 0px 0px;
   margin-right: auto;
   margin-left: auto;
-  height: 1250px;
+  height: 2200px;
 }
 #Restau-prev3 .Restau-prev__title {
   display: flex;
