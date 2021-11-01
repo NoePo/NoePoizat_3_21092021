@@ -251,17 +251,17 @@ h2 {
 /* Partie restaurants */
 article {
   background: #F2F2F2;
-  height: 2600px;
+  height: 2700px;
 }
 
 .Restau-prev {
-  width: 70%;
+  width: 90%;
   border-radius: 20px;
   background-color: white;
   margin-right: auto;
   margin-left: auto;
   box-shadow: 6px 6px 20px #c2c0c0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .Restau-prev .Restau-prev__image {
   height: 400px;
@@ -280,8 +280,9 @@ article {
 
 .Restau-titre {
   padding-top: 2em;
-  margin-left: 15%;
+  margin-left: 6%;
   font-size: 2.5em;
+  margin-bottom: 1.2em;
 }
 
 .Coeur {
@@ -300,7 +301,7 @@ article {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 2%;
-  margin-left: 48%;
+  margin-left: 65%;
   display: flex;
   color: #0b5f0b;
   border-radius: 5%;
